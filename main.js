@@ -25,7 +25,6 @@ function onOpen() {
       } else if (row[5] === 'English') {
         templateId = 'TEMPLATE ID ENGLISH';
       } else {
-        // You can customize this behavior based on your requirements
         return;
       }
   
@@ -63,7 +62,7 @@ function onOpen() {
       rangeWithPdfUrl.setValues([[pdfUrls]]);
     });
   }
-  //Adds a link to a PDF version of docs
+  //Adds a link to a PDF version of docs. Only one we need to save
   
   function convertDocsToPDF(docUrl) {
     var docId = docUrl.match(/[-\w]{25,}/)[0];
